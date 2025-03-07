@@ -1,0 +1,21 @@
+user_id,content_id,action,timestamp,device,region,session_id
+178,1002,play,2023-09-06 06:30:33,mobile,US,sess50X
+132,1004,skip,2023-09-06 07:40:15,tablet,APAC,sess51Y
+145,1008,forward,2023-09-06 08:55:40,desktop,EU,sess52Z
+127,1007,play,2023-09-06 09:20:22,mobile,US,sess53A
+143,1001,skip,2023-09-06 10:35:19,tablet,APAC,sess54B
+189,1010,play,2023-09-06 11:50:45,desktop,EU,sess55C
+151,1003,pause,2023-09-06 12:25:10,mobile,US,sess56D
+153,1009,forward,2023-09-06 13:15:29,tablet,APAC,sess57E
+198,1005,play,2023-09-06 14:45:55,desktop,EU,sess58F
+176,1006,skip,2023-09-06 16:00:30,mobile,US,sess59G
+104,1007,skip,2023-09-06 18:28:14,tablet,US,sessD93
+112,1003,pause,2023-09-06 03:28:55,mobile,EU,sessR17
+147,1009,skip,2023-09-06 09:50:14,tablet,APAC,sessR44
+194,1010,play,2023-09-06 10:37:58,desktop,APAC,sessATY
+186,1005,play,2023-09-06 11:50:54,desktop,APAC,sess2D0
+105,1003,play,2023-09-06 14:45:00,desktop,US,sess97B
+107,1001,skip,2023-09-06 19:00:15,tablet,EU,sessSUS
+163,1007,play,2023-09-06 13:15:29,desktop,EU,sessWML
+146,1002,play,2023-09-06 01:01:30,mobile,US,sessLV2
+156,1010,skip,2023-09-06 13:54:32,mobile,US,sessUBG

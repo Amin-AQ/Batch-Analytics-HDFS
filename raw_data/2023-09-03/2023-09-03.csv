@@ -1,0 +1,20 @@
+user_id,content_id,action,timestamp,device,region,session_id
+123,1003,play,2023-09-03 06:50:40,tablet,APAC,sess21U
+187,1006,pause,2023-09-03 07:15:22,desktop,EU,sess22V
+159,1008,forward,2023-09-03 08:30:55,mobile,US,sess23W
+145,1002,play,2023-09-03 09:40:12,tablet,APAC,sess24X
+138,1009,skip,2023-09-03 10:55:30,desktop,EU,sess25Y
+178,1004,play,2023-09-03 11:20:10,mobile,US,sess26Z
+161,1010,forward,2023-09-03 12:30:44,tablet,APAC,sess27A
+132,1007,skip,2023-09-03 13:10:21,desktop,EU,sess28B
+189,1005,play,2023-09-03 14:55:10,mobile,US,sess29C
+163,1008,forward,2023-09-03 05:23:34,mobile,APAC,sess6MK
+166,1003,skip,2023-09-03 07:18:07,desktop,US,sessY52
+106,1002,play,2023-09-03 18:36:45,desktop,US,sessO9N
+166,1001,forward,2023-09-03 02:47:28,tablet,APAC,sessAQM
+129,1000,pause,2023-09-03 11:57:25,tablet,EU,sessT54
+126,1001,skip,2023-09-03 11:30:51,mobile,APAC,sessII5
+111,1003,forward,2023-09-03 20:04:28,tablet,APAC,sessK4W
+111,1010,pause,2023-09-03 20:03:55,mobile,US,sessB36
+137,1007,play,2023-09-03 08:14:50,mobile,US,sessKKQ
+118,1009,play,2023-09-03 14:54:13,tablet,US,sessD24
