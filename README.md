@@ -38,16 +38,16 @@ By using **year, month, day** partitions in `fact_user_actions`, queries only sc
 | Stage                         | Execution Time            |
 | ----------------------------- | ------------------------- |
 | **Data Ingestion (HDFS)**     | ~10 sec                  |
-| **Raw Table Creation**        | ~2 sec                   |
-| **Data Transformation (ETL)** | ~15-20 sec               |
-| **Query Execution (Hive)**    | ~0.1 - 0.3 sec per query |
+| **Raw Table Creation**        | ~20 sec                   |
+| **Data Transformation (ETL)** | ~15 - 35 sec per table             |
+| **Query Execution (Hive)**    | ~20 - 40 sec per query |
 
 ### **Query Execution Time Analysis**
 | Query                          | Execution Time |
 | ------------------------------ | -------------- |
-| Monthly Active Users by Region | ~0.15 sec     |
-| Top Categories by Play Count   | ~0.18 sec     |
-| Average Session Count Per Week | ~0.2 sec      |
+| Monthly Active Users by Region | ~20.6 sec     |
+| Top Categories by Play Count   | ~38.1 sec     |
+| Average Session Count Per Week | ~34.2 sec      |
 
 ## **4. Hive Queries Used**
 ### **Data Transformation Queries**
@@ -59,6 +59,10 @@ SELECT DISTINCT user_id, region, device FROM raw_user_logs;
 -- Load Data into dim_content
 INSERT OVERWRITE TABLE dim_content
 SELECT DISTINCT * FROM raw_content_metadata;
+
+-- Load Data into `dim_sessions`
+INSERT OVERWRITE TABLE dim_sessions
+SELECT DISTINCT session_id, user_id FROM raw_user_logs;
 
 -- Load Data into fact_user_actions (Dynamic Partitioning)
 SET hive.exec.dynamic.partition.mode=nonstrict;

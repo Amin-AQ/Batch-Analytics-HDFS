@@ -6,6 +6,10 @@ SELECT DISTINCT user_id, region, device FROM raw_user_logs;
 INSERT OVERWRITE TABLE dim_content
 SELECT DISTINCT * FROM raw_content_metadata;
 
+-- Load Data into `dim_sessions`
+INSERT OVERWRITE TABLE dim_sessions
+SELECT DISTINCT session_id, user_id FROM raw_user_logs;
+
 -- Load Data into `fact_user_actions`
 SET hive.exec.dynamic.partition.mode=nonstrict;
 SET hive.exec.dynamic.partition=true;
