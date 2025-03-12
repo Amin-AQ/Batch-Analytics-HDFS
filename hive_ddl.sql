@@ -45,6 +45,13 @@ CREATE TABLE IF NOT EXISTS dim_content (
 )
 STORED AS PARQUET;
 
+-- Dimension Table for sessions
+CREATE TABLE IF NOT EXISTS dim_sessions (
+    session_id STRING,
+    user_id INT
+)
+STORED AS PARQUET;
+
 -- Fact Table for User Actions
 CREATE TABLE IF NOT EXISTS fact_user_actions (
     user_id INT,
